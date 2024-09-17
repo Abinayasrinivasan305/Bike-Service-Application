@@ -1,0 +1,49 @@
+/* BookingRecords.css */
+
+/* Container for the entire page */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Header style */
+.bookh1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f47105;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 2rem;
+    
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table thead th {
+    background-color: #f47105;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table th, .table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th {
+    border-bottom-width: 2px;
+}

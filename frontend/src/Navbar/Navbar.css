@@ -1,0 +1,176 @@
+/* Fixing the header at the top */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f47105; /* Header background color */
+  z-index: 1000; /* Ensure it stays on top */
+  padding: 0.1rem 0; /* Adds some padding for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Styling the nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and menu */
+  position: relative;
+  height: 60px; /* Define the header height */
+  padding: 1rem 2rem; /* Optional padding for left and right */
+  background-color: #f47105; /* Background color */
+}
+
+/* Logo styling */
+.nav__logo {
+  color: white;
+  font-size: 1.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  transition: color 0.4s;
+  text-decoration: none;
+  margin-left: 15px; /* Ensure no margin issues */
+  padding-bottom: 12px; /* Remove padding if any */
+}
+
+/* For the menu toggle button (visible on small screens) */
+.nav__toggle {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hide by default, only show on small screens */
+}
+.nav__item{
+  float: left;
+  margin-right: 5px;
+}
+
+/* CTA button (like Register, etc.) */
+.nav__cta {
+  background-color: #f47105;
+  color:white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.75rem 1.5rem;
+}
+
+/* For the navigation list */
+.nav__list {
+  display: flex; /* Align items horizontally by default */
+  column-gap: 2rem; /* Space between the links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation links */
+.nav__link {
+  color: black;
+  font-size: 20px;
+  font-family: Cambria, serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.4s;
+  padding: 10px;
+}
+.nav__link1 {
+  color: white;
+  font-size: 20px;
+  font-family: Cambria, serif;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.4s;
+  padding: 10px;
+}
+
+.nav__link1:hover {
+  color: white; /* Change color on hover */
+  background-color: red;
+  border-radius: 4px;
+}
+.nav__link:hover {
+  color: white; /* Change color on hover */
+  background-color: black;
+  border-radius: 4px;
+}
+
+/* For closing the menu on mobile */
+.nav__close {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown when the menu is open */
+}
+.nav__menu{
+  list-style-type: none;
+}
+/* For mobile screens */
+@media (max-width: 768px) {
+  .nav__list {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden off-screen */
+    width: 100%;
+    height: 100vh;
+    background-color: #f47105;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .show-menu {
+    right: 0; /* Bring the menu into view */
+  }
+  .nav__item{
+    float:none;
+  }
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__close {
+    display: block;
+  }
+
+  /* Increase font size and padding for better touch interaction */
+  .nav__link {
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+  .Sign-in{
+    font-size: 18px;
+    color:black;
+    padding: 5px 5px;
+  
+  }
+  
+  .nav__link:hover {
+    color: white; /* Change color on hover */
+    background-color: black;
+    border-radius: 4px;
+  }
+  .nav__link1 {
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, serif;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: color 0.4s;
+    padding: 10px;
+  }
+  
+  .nav__link1:hover {
+    color: white; /* Change color on hover */
+    background-color: red;
+    border-radius: 4px;
+  }
+}
+

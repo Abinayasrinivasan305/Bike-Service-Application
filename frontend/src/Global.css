@@ -1,0 +1,15 @@
+:root {
+  --navbar-height: 60px; /* Adjust this value to the height of your Navbar */
+  --background-color: black; /* Define the custom variable for background color */
+}
+
+body {
+  background-color: var(--background-color); /* Use the custom variable */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+}
+
+html, #root {
+  height: 100%; /* Ensure the root div also covers the full viewport */
+}

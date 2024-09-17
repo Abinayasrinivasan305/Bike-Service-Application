@@ -1,0 +1,67 @@
+/* AdminPanel.css */
+
+.admin-panel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    margin: 0;     /* Remove default margin */
+    background: #f0f0f0; /* Background color to show contrast */
+    font-family: cursive;
+}
+.h2head{
+    color:#f47105;
+    font-weight: bold;
+}
+
+.glass-card {
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    text-align: center;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f47105;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.registration-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.registration-list li {
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

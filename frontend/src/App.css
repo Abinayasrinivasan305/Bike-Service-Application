@@ -1,0 +1,12 @@
+/* In your main CSS file, such as styles.css or App.css */
+:root {
+  --navbar-height: 60px; /* Adjust this value to the height of your Navbar */
+  --background-color: black; /* Define a custom variable for background color */
+}
+
+body {
+  background-color: var(--background-color); /* Use the custom variable */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+}

@@ -1,0 +1,96 @@
+/* Services.css */
+
+.services-container {
+  padding: 2rem;
+  background-color: black; /* Ensure the background color is black */
+  margin-top: 60px;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: cursive;
+  color: #f47105;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 1rem; /* Add padding inside the card */
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card h2 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: black;
+  text-align: center; /* Center text horizontally */
+}
+
+.service-card p {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center; /* Center text horizontally */
+}
+
+.btn-primary {
+  background-color: #f47105;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block; /* Ensure the button behaves like a button */
+  font-size: 1rem;
+  border-radius: 5px; /* Optional: add border radius for rounded corners */
+  margin-top: 1rem; /* Add margin to separate from other elements */
+  text-align: center; /* Ensure text inside button is centered */
+}
+
+.btn-primary:hover {
+  background-color: black;
+}
+
+.btn-primary:focus, .btn-primary:active {
+  outline: none;
+  box-shadow: none;
+  background-color: black;
+}
+
+/* Style for the Link component within the button */
+.btn-primary a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary a:hover {
+  color: white;
+}

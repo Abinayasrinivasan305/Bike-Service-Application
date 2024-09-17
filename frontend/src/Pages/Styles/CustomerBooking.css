@@ -1,0 +1,63 @@
+/* CustomerBookings.css */
+
+/* Center the table and make it responsive */
+.customer-bookings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the table is vertically centered */
+    background-color: #f4f4f4;
+  }
+  
+  /* Style the table */
+  .customer-bookings-table {
+    width: 80%; /* Set width of the table */
+    max-width: 1000px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visual */
+    background-color: white;
+  }
+  .h2headcus{
+     font-family: cursive;
+     font-weight: bold;
+     color: #f47105;
+     text-align: center;
+  }
+  /* Table header styles */
+  .customer-bookings-table th {
+    padding: 12px 15px;
+    background-color: #f47105; /* Add a color to header */
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+  }
+  
+  /* Table row styles */
+  .customer-bookings-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for alternating rows */
+  .customer-bookings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for hover effect on rows */
+  .customer-bookings-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for mobile responsiveness */
+  @media (max-width: 768px) {
+    .customer-bookings-table {
+      width: 100%; /* Make table responsive for mobile */
+    }
+  
+    .customer-bookings-table th, .customer-bookings-table td {
+      padding: 10px;
+    }
+  }
+  
