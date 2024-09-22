@@ -10,7 +10,7 @@ import BookingRecords from './Pages/BookingRecords.jsx'; // Adjust the path as n
 import Services from './Pages/Services.jsx'; // Adjust the path as needed
 import ProtectedRoute from './Pages/ProtectedRoute.jsx'; // Adjust the path as needed
 import RegisterService from './Pages/RegisterService.jsx';
-import './global.css';
+import './Global.css';
 
 const App = () => {
   const { user } = useAuth();
