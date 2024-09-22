@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import AdminPanel from './Pages/AdminPanel';
 import AdminNavbar from './Navbar/AdminNavbar.jsx';
 import CustomerBookings from './Pages/CustomerBookings'; // Import the new component
-import './global.css';
+import './Global.css';
 
 const AppAdmin = () => {
   return (
